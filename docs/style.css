@@ -1,0 +1,62 @@
+/*
+Theme Name: CustomTheme
+Theme URI: https://wordpress.org/themes/CustomTheme/
+Author: the Rost team
+Author URI: http://rost.com.ua/
+Description: CustomTheme brings your site to life with immersive featured images and subtle animations. Our default theme works great in many languages, for any abilities, and on any device.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: CustomTheme
+Tags: custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header-container .header-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.header-container .header-list li {
+  margin-right: 45px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+.header-container .header-list li:last-child {
+  margin-right: 0;
+}
+.header-container .header-logo {
+  margin: 0 80px;
+}
+/*# sourceMappingURL=style.css.map */

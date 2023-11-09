@@ -1,0 +1,48 @@
+500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header-container .header-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.header-container .header-list li {
+  margin-right: 45px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+.header-container .header-list li:last-child {
+  margin-right: 0;
+}
+.header-container .header-logo {
+  margin: 0 80px;
+}
+/*# sourceMappingURL=style.css.map */

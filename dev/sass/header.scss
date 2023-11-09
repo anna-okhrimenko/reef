@@ -1,0 +1,26 @@
+.header-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	.header-list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		list-style: none;
+		li {
+			margin-right: 45px;
+			// color: #FFF;
+			text-align: center;
+			font-size: 16px;
+			font-weight: 500;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.header-logo {
+		margin: 0 80px;
+	}
+}
