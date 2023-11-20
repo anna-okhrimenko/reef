@@ -18,8 +18,20 @@ body {
 
 .title {
     margin-bottom: 30px;
-    $secondary-color: linear-gradient(180deg, #FECD6F 0%, #FECD6F 100%);
+    color: $secondary-color;
     font-size: 48px;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+.btn {
+    border-radius: 16px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #FECD6F 0%, #CD9833 100%);
+    max-width: 200px;
+    padding: 20px 80px;
+    border: none;
+    font-size: 19px;
+    font-weight: 400;
+    cursor: pointer;
 }
