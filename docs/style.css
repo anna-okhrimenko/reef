@@ -186,6 +186,85 @@ header {
   margin-bottom: 34px;
 }
 
+.family-block {
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+}
+.family-block_imgs {
+  margin-right: 84px;
+  position: relative;
+}
+.family-block_imgs .family-img {
+  position: relative;
+}
+.family-block_imgs .red-coral {
+  position: absolute;
+  bottom: -66px;
+  left: -107px;
+}
+.family-block_imgs .yelow-coral {
+  position: absolute;
+  bottom: -46px;
+  right: -108px;
+  z-index: -1;
+}
+.family-block_text .title {
+  background: linear-gradient(180deg, #7D20F4 -34.75%, #FECD6F 125.42%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.family-block_text p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.star-block {
+  background-image: url(assets/img/star-block_bg.png);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 90px 0;
+}
+.star-block .container {
+  display: flex;
+  justify-content: left;
+}
+.star-block .star-block_text {
+  max-width: 676px;
+}
+.star-block .star-block_text p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.star-block .star-block_img {
+  position: absolute;
+  top: -151px;
+  right: 0;
+}
+.star-block .star-block_img .star-img {
+  position: relative;
+  z-index: 1;
+}
+.star-block .star-block_img .star_yelow-coral {
+  width: 600px;
+  position: absolute;
+  top: -40px;
+  right: 143px;
+  transform: rotate(322deg);
+}
+.star-block .star-block_img .star_red-coral {
+  width: 600px;
+  position: absolute;
+  bottom: -69px;
+  left: 89px;
+  transform: rotate(138deg);
+}
+
 @media screen and (max-width: 1024px) {
   .header-container .header-list li {
     margin-right: 35px;
