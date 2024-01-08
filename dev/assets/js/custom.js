@@ -1,3 +1,5 @@
+
+
 var headerHeight = document.getElementById('header-height').clientHeight;
 const firstScreenBlock = document.querySelector('.first-screen_title-block');
 
@@ -52,4 +54,20 @@ const initFolow = () => {
 window.addEventListener('resize', setWindowSize);
 window.addEventListener("mousemove", mousemove);
 window.addEventListener("touchmove", touchmove);
+
+const swiper = new Swiper('.my-slider', {
+ 
+  // And if we need scrollbar
+  centeredSlides:false,
+  loop:false,
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    hide: false,
+		draggable: true,
+  },
+});
+
+var rellax = new Rellax ('.red-coral_paralax', {
+  center: true,
+});
 

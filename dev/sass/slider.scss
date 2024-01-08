@@ -1,0 +1,44 @@
+.slider {
+    position: relative;
+    padding: 80px 0;
+    .red-coral_paralax {
+        position: absolute;
+        bottom: 114px;
+    }
+    .my-slider {
+        height: 576px;
+        max-width: 1050px;
+        width: 100%;
+        .swiper-scrollbar {
+            position: relative;
+            margin: 25px 0 50px;
+            height: 65px;
+            border-radius: 77px;
+            background: linear-gradient(180deg, #FE9EA0 -54.62%, #FFCDAE 129.23%) !important;
+            .swiper-scrollbar-drag {
+                background-image: url(assets/img/scroll-star.png);
+                background-size: 130px 130px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                height: 130px;
+                background-color: transparent;
+                top: -23px;
+            }
+        }
+
+        .swiper-wrapper {
+            .my-slider_slide {
+                max-width: 860px;
+                width: 100%;
+                margin: 10px 90px 10px 100px;
+                p,
+                ul {
+                    margin-bottom: 18px;
+                }
+            }
+        }
+
+        
+    }
+    
+}

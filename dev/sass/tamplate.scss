@@ -18,10 +18,13 @@ body {
 
 .title {
     margin-bottom: 30px;
-    color: $secondary-color;
     font-size: 48px;
     font-weight: 600;
     text-transform: uppercase;
+    background: linear-gradient(180deg, #FECD6F 0%, #FECD6F 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .btn {

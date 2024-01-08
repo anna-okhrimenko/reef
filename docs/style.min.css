@@ -17,10 +17,13 @@ body {
 
 .title {
   margin-bottom: 30px;
-  color: linear-gradient(180deg, #FECD6F 0%, #FECD6F 100%);
   font-size: 48px;
   font-weight: 600;
   text-transform: uppercase;
+  background: linear-gradient(180deg, #FECD6F 0%, #FECD6F 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .btn {
@@ -212,7 +215,6 @@ header {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
   padding: 90px 0;
 }
 .star-block .container {
@@ -221,6 +223,7 @@ header {
 }
 .star-block .star-block_text {
   max-width: 676px;
+  z-index: 1;
 }
 .star-block .star-block_text p {
   font-size: 16px;
@@ -228,27 +231,67 @@ header {
   color: #ffffff;
 }
 .star-block .star-block_img {
-  position: absolute;
+  position: relative;
   top: -151px;
   right: 0;
 }
 .star-block .star-block_img .star-img {
-  position: relative;
+  position: absolute;
   z-index: 1;
+  top: -81px;
 }
 .star-block .star-block_img .star_yelow-coral {
-  width: 600px;
+  width: 550px;
   position: absolute;
-  top: -40px;
-  right: 143px;
-  transform: rotate(322deg);
+  top: -118px;
+  left: -119px;
+  transform: rotate(356deg);
 }
 .star-block .star-block_img .star_red-coral {
-  width: 600px;
+  width: 550px;
   position: absolute;
-  bottom: -69px;
-  left: 89px;
-  transform: rotate(138deg);
+  top: 40px;
+  left: 124px;
+  transform: rotate(359deg);
+}
+
+.slider {
+  position: relative;
+  padding: 80px 0;
+}
+.slider .red-coral_paralax {
+  position: absolute;
+  bottom: 114px;
+}
+.slider .my-slider {
+  height: 576px;
+  max-width: 1050px;
+  width: 100%;
+}
+.slider .my-slider .swiper-scrollbar {
+  position: relative;
+  margin: 25px 0 50px;
+  height: 65px;
+  border-radius: 77px;
+  background: linear-gradient(180deg, #FE9EA0 -54.62%, #FFCDAE 129.23%) !important;
+}
+.slider .my-slider .swiper-scrollbar .swiper-scrollbar-drag {
+  background-image: url(assets/img/scroll-star.png);
+  background-size: 130px 130px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 130px;
+  background-color: transparent;
+  top: -23px;
+}
+.slider .my-slider .swiper-wrapper .my-slider_slide {
+  max-width: 860px;
+  width: 100%;
+  margin: 10px 90px 10px 100px;
+}
+.slider .my-slider .swiper-wrapper .my-slider_slide p,
+.slider .my-slider .swiper-wrapper .my-slider_slide ul {
+  margin-bottom: 18px;
 }
 
 @media screen and (max-width: 1024px) {
