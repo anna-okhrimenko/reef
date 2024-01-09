@@ -1,0 +1,56 @@
+.dolphin-block {
+    background-image: url(assets/img/star-block_bg.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+    position: relative;
+    .container {
+        display: flex;
+        justify-content: left;
+    }
+    .dolphin-block_text {
+        max-width: 676px;
+        z-index: 1;
+        p {
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #ffffff;
+        }
+    }
+    .dolphin-block_img {
+        position: relative;
+        top: -151px;
+        right: 0;
+        
+        .dolphin-img {
+            position: absolute;
+            z-index: 3;
+            top: 144px;
+        }
+        
+    }
+
+    .dolphin_red-coral_block {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        top: 0;
+        bottom: 0;
+        right: 159px;
+        overflow: hidden;
+        .dolphin_red-coral {
+            width: 777px;
+        }
+    }
+
+    .dolphin_yelow-coral {
+        width: 805px;
+        position: absolute;
+        top: -149px;
+        transform: rotate(290deg);
+        right: 1px;
+    }
+        
+}

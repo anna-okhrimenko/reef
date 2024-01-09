@@ -1,85 +1,86 @@
-.family-block {
-    display: flex;
-    align-items: center;
-    padding: 18px 0;
-    &_imgs {
-        margin-right: 84px;
-        position: relative;
-        .family-img {
-            position: relative;
-        }
-        .red-coral {
-            position: absolute;
-            bottom: -66px;
-            left: -107px;
-        }
-
-        .yelow-coral {
-            position: absolute;
-            bottom: -46px;
-            right: -108px;
-            z-index: -1;
-        }
-    }
-    &_text {
-        .title {
-            background: linear-gradient(180deg, #7D20F4 -34.75%, #FECD6F 125.42%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        p {
-            font-size: 16px;
-            font-weight: 500;
-            margin-bottom: 30px;
-        }
-    }
-}
-
-.star-block {
-    background-image: url(assets/img/star-block_bg.png);
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 90px 0;
-    .container {
+.info-block {
+    overflow-x: clip;  
+    .family-block {
         display: flex;
-        justify-content: left;
-    }
-    .star-block_text {
-        max-width: 676px;
-        z-index: 1;
-        p {
-            font-size: 16px;
-            font-weight: 500;
-            color: #ffffff;
+        align-items: center;
+        padding: 18px 0;
+        &_imgs {
+            margin-right: 84px;
+            position: relative;
+            .family-img {
+                position: relative;
+            }
+            .red-coral {
+                position: absolute;
+                bottom: -66px;
+                left: -107px;
+            }
+            .yelow-coral {
+                position: absolute;
+                bottom: -46px;
+                right: -108px;
+                z-index: -1;
+            }
+        }
+        &_text {
+            .title {
+                background: linear-gradient(180deg, #7D20F4 -34.75%, #FECD6F 125.42%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 30px;
+            }
         }
     }
-    .star-block_img {
-        position: relative;
-        top: -151px;
-        right: 0;
-        
-        .star-img {
-            position: absolute;
-            z-index: 1;
-            top: -81px;
-        }
-        .star_yelow-coral {
-            width: 550px;
-            position: absolute;
-            top: -118px;
-            left: -119px;
-            transform: rotate(356deg);
-            
-        }
-        .star_red-coral {
-            width: 550px;
-            position: absolute;
-            top: 40px;
-            left: 124px;
-            transform: rotate(359deg);
-        }
 
+    .star-block {
+        background-image: url(assets/img/star-block_bg.png);
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 90px 0;
+        .container {
+            display: flex;
+            justify-content: left;
+        }
+        .star-block_text {
+            max-width: 676px;
+            z-index: 1;
+            p {
+                font-size: 16px;
+                font-weight: 500;
+                color: #ffffff;
+            }
+        }
+        .star-block_img {
+            position: relative;
+            top: -151px;
+            right: 0;
+            
+            .star-img {
+                position: absolute;
+                z-index: 1;
+                top: -81px;
+            }
+            .star_yelow-coral {
+                width: 550px;
+                position: absolute;
+                top: -118px;
+                left: -119px;
+                transform: rotate(356deg);
+            }
+            .star_red-coral {
+                width: 550px;
+                position: absolute;
+                top: 40px;
+                left: 124px;
+                transform: rotate(359deg);
+            }
+    
+        }
     }
 }

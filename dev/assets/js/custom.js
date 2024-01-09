@@ -44,10 +44,10 @@ const followCursor = (el, xRatio, yRatio, direction) => {
 }
 
 const initFolow = () => {
-  if (redCoral) followCursor(redCoral, -19, -15, 1)
-  if (yelowCoral) followCursor(yelowCoral, -20, -16, -1)
-  if (starYelowCoral) followCursor(starYelowCoral, -16, -20, -1)
-  if (starRedCoral) followCursor(starRedCoral, -15, -19, 1)
+  if (redCoral) followCursor(redCoral, -20, -16, 1)
+  if (yelowCoral) followCursor(yelowCoral, -21, -17, -1)
+  if (starYelowCoral) followCursor(starYelowCoral, -18, -22, -1)
+  if (starRedCoral) followCursor(starRedCoral, -17, -21, 1)
 
 }
 
@@ -69,5 +69,12 @@ const swiper = new Swiper('.my-slider', {
 
 var rellax = new Rellax ('.red-coral_paralax', {
   center: true,
+});
+var rellax = new Rellax ('.dolphin_yelow-coral', {
+  center: true,
+});
+var rellax = new Rellax ('.dolphin_red-coral', {
+  center: true,
+  // wrapper: '.dolphin-block',
 });
 

@@ -189,79 +189,81 @@ header {
   margin-bottom: 34px;
 }
 
-.family-block {
+.info-block {
+  overflow-x: clip;
+}
+.info-block .family-block {
   display: flex;
   align-items: center;
   padding: 18px 0;
 }
-.family-block_imgs {
+.info-block .family-block_imgs {
   margin-right: 84px;
   position: relative;
 }
-.family-block_imgs .family-img {
+.info-block .family-block_imgs .family-img {
   position: relative;
 }
-.family-block_imgs .red-coral {
+.info-block .family-block_imgs .red-coral {
   position: absolute;
   bottom: -66px;
   left: -107px;
 }
-.family-block_imgs .yelow-coral {
+.info-block .family-block_imgs .yelow-coral {
   position: absolute;
   bottom: -46px;
   right: -108px;
   z-index: -1;
 }
-.family-block_text .title {
+.info-block .family-block_text .title {
   background: linear-gradient(180deg, #7D20F4 -34.75%, #FECD6F 125.42%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.family-block_text p {
+.info-block .family-block_text p {
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 30px;
 }
-
-.star-block {
+.info-block .star-block {
   background-image: url(assets/img/star-block_bg.png);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 90px 0;
 }
-.star-block .container {
+.info-block .star-block .container {
   display: flex;
   justify-content: left;
 }
-.star-block .star-block_text {
+.info-block .star-block .star-block_text {
   max-width: 676px;
   z-index: 1;
 }
-.star-block .star-block_text p {
+.info-block .star-block .star-block_text p {
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
 }
-.star-block .star-block_img {
+.info-block .star-block .star-block_img {
   position: relative;
   top: -151px;
   right: 0;
 }
-.star-block .star-block_img .star-img {
+.info-block .star-block .star-block_img .star-img {
   position: absolute;
   z-index: 1;
   top: -81px;
 }
-.star-block .star-block_img .star_yelow-coral {
+.info-block .star-block .star-block_img .star_yelow-coral {
   width: 550px;
   position: absolute;
   top: -118px;
   left: -119px;
   transform: rotate(356deg);
 }
-.star-block .star-block_img .star_red-coral {
+.info-block .star-block .star-block_img .star_red-coral {
   width: 550px;
   position: absolute;
   top: 40px;
@@ -306,6 +308,58 @@ header {
 .slider .my-slider .swiper-wrapper .my-slider_slide p,
 .slider .my-slider .swiper-wrapper .my-slider_slide ul {
   margin-bottom: 18px;
+}
+
+.dolphin-block {
+  background-image: url(assets/img/star-block_bg.png);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px 0;
+  position: relative;
+}
+.dolphin-block .container {
+  display: flex;
+  justify-content: left;
+}
+.dolphin-block .dolphin-block_text {
+  max-width: 676px;
+  z-index: 1;
+}
+.dolphin-block .dolphin-block_text p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.dolphin-block .dolphin-block_img {
+  position: relative;
+  top: -151px;
+  right: 0;
+}
+.dolphin-block .dolphin-block_img .dolphin-img {
+  position: absolute;
+  z-index: 3;
+  top: 144px;
+}
+.dolphin-block .dolphin_red-coral_block {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  right: 159px;
+  overflow: hidden;
+}
+.dolphin-block .dolphin_red-coral_block .dolphin_red-coral {
+  width: 777px;
+}
+.dolphin-block .dolphin_yelow-coral {
+  width: 805px;
+  position: absolute;
+  top: -149px;
+  transform: rotate(290deg);
+  right: 1px;
 }
 
 @media screen and (max-width: 1024px) {
