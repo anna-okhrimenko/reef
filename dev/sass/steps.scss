@@ -1,0 +1,52 @@
+.steps {
+    padding: 30px 0;
+    position: relative;
+    .title {
+        text-align: center;
+    }
+    .steps-container {
+        position: relative;
+        max-width: 900px;
+        margin: 0 auto;
+        .steps-info {
+            text-align: right;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 55px 0;
+            p {
+                margin-bottom: 30px;
+                display: block;
+                width: calc(50% - 55px);
+                &:nth-child(odd) {
+                    margin-left: auto;
+                    text-align: left;
+                }
+            }
+        }
+
+        .steps-border {
+            right: calc(50% - 25px);
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            width: 50px;
+            border-radius: 77px;
+            background: linear-gradient(90deg, #FE9EA0 -54.62%, #FFCDAE 129.23%);
+            img {
+                position: absolute;
+                width: 84px;
+                right: calc(50% - 42px);
+                top: 84px;
+            }
+        }
+    }
+    .pies-yellow_coral {
+        position: absolute;
+        left: 0;
+        top: calc(100% - 590px);
+    }
+    .pies-red_coral {
+        position: absolute;
+        right: 0;
+    }
+}

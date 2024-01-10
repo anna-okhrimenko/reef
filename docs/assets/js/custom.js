@@ -67,14 +67,8 @@ const swiper = new Swiper('.my-slider', {
   },
 });
 
-var rellax = new Rellax ('.red-coral_paralax', {
+var rellax = new Rellax ('.paralax', {
   center: true,
 });
-var rellax = new Rellax ('.dolphin_yelow-coral', {
-  center: true,
-});
-var rellax = new Rellax ('.dolphin_red-coral', {
-  center: true,
-  // wrapper: '.dolphin-block',
-});
+
 
