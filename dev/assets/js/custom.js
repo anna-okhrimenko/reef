@@ -67,8 +67,37 @@ const swiper = new Swiper('.my-slider', {
   },
 });
 
+
+// parallax
+
 var rellax = new Rellax ('.paralax', {
   center: true,
 });
+
+// accordion
+
+const instalAccordion = function() {
+  const accordions = document.querySelectorAll('.accordion');
+  accordions.forEach(accordion => {
+    const accordionItems = accordion.querySelectorAll('.accordion-item');
+    accordionItems.forEach(accordionTool => {
+      const accordionTitle = accordionTool.querySelector('.accordion-title');
+      accordionTitle.addEventListener("click", function() {
+        if(accordionTool.classList.contains('active')) {
+          accordionTool.classList.remove('active');
+        }else{
+          const accordionItemActive = accordion.querySelector('.accordion-item.active');
+          if(accordionItemActive) {
+            accordionItemActive.classList.remove('active');
+          }
+          accordionTool.classList.add('active');
+        }
+      });
+    });
+  });
+
+}
+
+instalAccordion();
 
 

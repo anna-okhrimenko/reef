@@ -400,6 +400,77 @@ header {
   right: 0;
 }
 
+.faq {
+  background-image: url(assets/img/star-block_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0;
+}
+.faq .title {
+  text-align: center;
+}
+.faq .accordion {
+  margin: 0 auto;
+  max-width: 860px;
+  width: 100%;
+}
+.faq .accordion .accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+}
+.faq .accordion .accordion-content {
+  color: transparent;
+  padding: 0;
+  font-size: 0;
+  font-weight: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.faq .accordion .accordion-btn {
+  border: none;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  position: relative;
+  text-align: center;
+}
+.faq .accordion .accordion-btn::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 18px;
+  right: 0;
+  top: 50%;
+  transform: rotate(-90deg);
+  transition: all 0.2s ease-in-out;
+  background: #fff;
+}
+.faq .accordion .accordion-btn::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 18px;
+  right: 0;
+  top: 50%;
+  transition: all 0.2s ease-in-out;
+  background: #fff;
+}
+.faq .accordion .accordion-item.active .accordion-content {
+  color: #FFF;
+  padding: 0 0 10px;
+  font-size: 14px;
+  font-weight: 400;
+  transition: 0.5s;
+}
+.faq .accordion .accordion-item.active .accordion-btn::before {
+  transform: rotate(0deg);
+}
+
 @media screen and (max-width: 1024px) {
   .header-container .header-list li {
     margin-right: 35px;

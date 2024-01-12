@@ -1,0 +1,80 @@
+.faq {
+    background-image: url(assets/img/star-block_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+    .title {
+        text-align: center;
+    }
+    .accordion {
+        margin: 0 auto;
+        max-width: 860px;
+        width: 100%;
+        .accordion-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .accordion-content {
+            color: transparent;
+            padding: 0 ;
+            font-size: 0;
+            font-weight: 0;
+            overflow: hidden;
+            transition: .5s;
+            
+        }
+        .accordion-btn {
+            border: none;
+            cursor: pointer;
+            display: block;
+            outline: none;
+            position: relative;
+            text-align: center;
+            &::before {
+                content: "";
+                position: absolute;
+                height: 4px;
+                width: 18px;
+                right: 0;
+                top: 50%;
+                transform: rotate(-90deg);
+                transition: all 0.2s ease-in-out;
+                background: #fff;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 4px;
+                width: 18px;
+                right: 0;
+                top: 50%;
+                transition: all 0.2s ease-in-out;
+                background: #fff;
+            }
+        }
+
+
+        .accordion-item.active {
+            .accordion-content {
+                color: #FFF;
+                padding: 0 0 10px;
+                font-size: 14px;
+                font-weight: 400;
+                transition: .5s;
+            }
+
+            .accordion-btn {
+                &::before {
+                    transform: rotate(0deg);
+                }
+            }
+
+        }
+    }
+}
