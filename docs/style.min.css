@@ -15,6 +15,12 @@ body {
   padding: 0 10px;
 }
 
+.footer-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .title {
   margin-bottom: 30px;
   font-size: 48px;
@@ -27,6 +33,7 @@ body {
 }
 
 .btn {
+  color: white;
   border-radius: 16px;
   border-radius: 16px;
   background: linear-gradient(180deg, #FECD6F 0%, #CD9833 100%);
@@ -36,6 +43,18 @@ body {
   font-size: 19px;
   font-weight: 400;
   cursor: pointer;
+}
+
+input {
+  border: none;
+}
+input:focus-visible {
+  outline: none;
+  padding-inline: none;
+}
+
+.paralax {
+  pointer-events: none;
 }
 
 header {
@@ -422,6 +441,7 @@ header {
   color: #FFF;
   font-size: 16px;
   font-weight: 600;
+  cursor: pointer;
 }
 .faq .accordion .accordion-content {
   color: transparent;
@@ -469,6 +489,130 @@ header {
 }
 .faq .accordion .accordion-item.active .accordion-btn::before {
   transform: rotate(0deg);
+}
+
+.vacancies {
+  padding: 30px 0;
+}
+.vacancies .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.vacancies .container .title {
+  margin-bottom: 0;
+}
+
+footer {
+  background-image: url(assets/img/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer .footer-container {
+  padding: 25px 0;
+}
+footer .footer-container .first-footer_block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+footer .footer-container .first-footer_block .footer-basic_part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer .footer-container .first-footer_block .footer-basic_part .footer-list {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+footer .footer-container .first-footer_block .footer-basic_part .footer-list li {
+  margin-right: 25px;
+  color: white;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(110deg, rgb(254, 162, 161) 10%, rgb(0, 0, 0) 13%, rgb(255, 255, 255) 15%, rgb(255, 255, 255) 99%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-position: 40%;
+  background-size: 200%;
+  transition: 0.5s;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+footer .footer-container .first-footer_block .footer-basic_part .footer-list li:last-child {
+  margin-right: 0;
+}
+footer .footer-container .first-footer_block .footer-basic_part .footer-list li:hover {
+  background-position: -100%;
+}
+footer .footer-container .first-footer_block .footer-basic_part .subscribe-form .subscribe-title {
+  margin-right: 10px;
+  color: #FECD6F;
+  font-size: 14px;
+  font-weight: 500;
+}
+footer .footer-container .first-footer_block .footer-basic_part .subscribe-form #username {
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+  max-width: 230px;
+  margin-right: 10px;
+}
+footer .footer-container .first-footer_block .footer-basic_part .subscribe-form .submit-btn {
+  border-radius: 5px;
+  background: linear-gradient(180deg, #FECD6F 0%, #CD9833 100%);
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px;
+  width: 100%;
+  max-width: 140px;
+  cursor: pointer;
+}
+footer .footer-container .first-footer_block .footer-sm_icons {
+  display: flex;
+  align-items: center;
+}
+footer .footer-container .first-footer_block .footer-sm_icons .social-media {
+  margin-right: 10px;
+  transition: transform 0.3s ease-in;
+}
+footer .footer-container .first-footer_block .footer-sm_icons .social-media img {
+  max-width: 30px;
+  width: 100%;
+}
+footer .footer-container .first-footer_block .footer-sm_icons .social-media:last-child {
+  margin-right: 0;
+}
+footer .footer-container .first-footer_block .footer-sm_icons .social-media:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in;
+}
+footer .footer-container .second-footer_block {
+  border-top: 1px solid rgba(196, 196, 196, 0.2901960784);
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-container .second-footer_block .privacy-policy a {
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+  margin-right: 35px;
+}
+footer .footer-container .second-footer_block .privacy-policy a:last-child {
+  margin-right: 0;
+}
+footer .footer-container .second-footer_block .dev-icon img {
+  max-height: 20px;
 }
 
 @media screen and (max-width: 1024px) {

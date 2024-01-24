@@ -1,2 +1,119 @@
-
- 
+footer {
+    background-image: url(assets/img/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .footer-container {
+        padding: 25px 0;
+        .first-footer_block {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            .footer-basic_part {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .footer-list {
+                    margin-bottom: 25px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    list-style: none;
+                    li {
+                        margin-right: 25px;
+                        color: white;
+                        background: rgb(0,0,0);
+                        background: linear-gradient(110deg, rgb(254 162 161) 10%, rgb(0 0 0) 13%, rgb(255 255 255) 15%, rgb(255 255 255) 99%);			background-clip: text;
+                        -webkit-background-clip: text;
+                        color: transparent;
+                        background-position: 40%;
+                        background-size: 200%;
+                        transition: 0.5s;
+                        text-align: center;
+                        font-size: 14px;
+                        font-weight: 500;
+                        cursor: pointer;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        &:hover {
+                            background-position: -100%;
+                        }
+                    }
+                }
+                .subscribe-form {
+                    .subscribe-title {
+                        margin-right: 10px;
+                        color: #FECD6F;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                    #username {
+                        border-radius: 5px;
+                        padding: 8px;
+                        width: 100%;
+                        max-width: 230px;
+                        margin-right: 10px;
+                    }
+                    
+                    .submit-btn {
+                        border-radius: 5px;
+                        background: linear-gradient(180deg, #FECD6F 0%, #CD9833 100%);
+                        color: #000;
+                        font-size: 14px;
+                        font-weight: 400;
+                        padding: 8px;
+                        width: 100%;
+                        max-width: 140px;
+                        cursor: pointer;
+                        
+                    }
+                }
+            }
+            .footer-sm_icons {
+                display: flex;
+                align-items: center;
+                
+                .social-media {
+                    margin-right: 10px;
+                    transition: transform 0.3s ease-in;
+                    img {
+                        max-width: 30px;
+                        width: 100%;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &:hover {
+                        transform: scale(1.2);
+                        transition: transform 0.3s ease-in;
+                    }
+                }
+            }
+        }
+        .second-footer_block {
+            border-top: 1px solid #c4c4c44a;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .privacy-policy {
+                a {
+                    color: #FFFFFF;
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-decoration: none;
+                    margin-right: 35px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+            .dev-icon {
+                img {
+                    max-height: 20px;
+                }
+            }
+        }
+    }
+}

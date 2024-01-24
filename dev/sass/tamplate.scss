@@ -15,6 +15,11 @@ body {
     margin: 0 auto;
     padding: 0 10px;
 }
+.footer-container {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
 
 .title {
     margin-bottom: 30px;
@@ -28,6 +33,7 @@ body {
 }
 
 .btn {
+    color: white;
     border-radius: 16px;
     border-radius: 16px;
     background: linear-gradient(180deg, #FECD6F 0%, #CD9833 100%);
@@ -37,4 +43,17 @@ body {
     font-size: 19px;
     font-weight: 400;
     cursor: pointer;
+}
+
+input {
+    border: none;
+    &:focus-visible {
+        outline: none;
+        padding-inline: none;
+    }
+
+}
+
+.paralax {
+    pointer-events: none;
 }
