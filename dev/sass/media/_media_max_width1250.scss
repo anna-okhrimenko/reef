@@ -1,0 +1,19 @@
+@media screen and (max-width: 1250px) {
+    
+    .header-container {
+        .header-list {
+            li {
+                margin-right: 35px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+        .header-logo {
+            margin: 0 50px;
+            img {
+                width: 100%;
+                max-width: 290px;
+            }
+        }
+    }
+}

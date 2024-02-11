@@ -1,9 +1,10 @@
-
-
-var headerHeight = document.getElementById('header-height').clientHeight;
-const firstScreenBlock = document.querySelector('.first-screen_title-block');
-
-firstScreenBlock.style.paddingTop = (headerHeight + 60)+'px';
+const setFirstScreenPadding = function() {
+  const firstScreenBlock = document.querySelector('.first-screen_title-block');
+  var headerHeight = document.getElementById('header-height').clientHeight;
+  firstScreenBlock.style.paddingTop = (headerHeight + 60)+'px';
+}
+setFirstScreenPadding();
+window.addEventListener("resize", setFirstScreenPadding);
 
 // select elements
 const redCoral = document.querySelector(".red-coral");
@@ -100,4 +101,20 @@ const instalAccordion = function() {
 
 instalAccordion();
 
-
+const openMobileMenu = function() {
+  const headerMobileClose = document.querySelector('.header');
+  const openBtn = document.querySelector('.btn-open');
+  openBtn.addEventListener("click", function() {
+    
+    if(headerMobileClose.classList.contains('open')) {
+      headerMobileClose.classList.remove('open');
+    }else{
+      const headerMobileOpen = document.querySelector('.header.open');
+      if(headerMobileOpen) {
+        headerMobileOpen.classList.remove('open');
+      }
+      headerMobileClose.classList.add('open');
+    }
+  })
+}
+openMobileMenu();
